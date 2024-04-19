@@ -15,14 +15,14 @@
     <h1>Age Calculator</h1>
   </header>
   <main>
-    <form>
+    <form id="dates-form">
       <div>
-        <label for="date-birth">Date of Birth:</label> 
-        <input type="date" id="date-birth" step="1" min="300-00-00" value="2000-06-06" max="10000-12-12"> 
-      </div>
+        <label for="birth-date">Date of Birth:</label> 
+        <input type="date" id="birth-date" step="1" min="300-00-00" value="2000-06-06" max="10000-12-12"> 
+      </div> 
       <div>
-        <label for="date-find">Find Age on:</label>
-        <input type="date" id="date-find" step="1" min="300-00-00" max="10000-12-12"> 
+        <label for="find-date">Find Age on:</label>
+        <input type="date" id="find-date" step="1" min="300-00-00" max="10000-12-12"> 
       </div>
       <div>
         <button id="clear" type="reset">Clear</button>
@@ -40,9 +40,10 @@
         <header>
           <h3>More Information:</h3>
         </header>
-        <p>58 years, 2 months, 3 days, 3 hours, 3 min, 3 seconds</p>
+        <p>58 years, 2 months, 3 days</p>
       </div>
     </div>
-  </main>
+  </main> 
+  <script src="index.js"></script>
 </body>
 </html>
