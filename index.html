@@ -16,20 +16,32 @@
   </header>
   <main>
     <form>
-      <label for="">Date of Birth:</label> 
-        <input type="date" step="1" min="300-00-00" value="2000-06-06" max="10000-12-12"> 
-      <label for="">Find Age on:</label>
-        <input type="date" step="1" min="300-00-00" max="10000-12-12"> 
+      <div>
+        <label for="date-birth">Date of Birth:</label> 
+        <input type="date" id="date-birth" step="1" min="300-00-00" value="2000-06-06" max="10000-12-12"> 
+      </div>
+      <div>
+        <label for="date-find">Find Age on:</label>
+        <input type="date" id="date-find" step="1" min="300-00-00" max="10000-12-12"> 
+      </div>
       <div>
         <button id="clear" type="reset">Clear</button>
         <button id="calculate" type="submit">Calculate</button>
       </div>
     </form>
-    <div>
-      <header>
-        <h3>Answer:</h3>
-      </header>
-      <p>Age = 58 years</p>
+    <div class="result-container">
+      <div>
+        <header>
+          <h3>Answer:</h3>
+        </header>
+        <p>Age = 58 years</p>
+      </div>
+      <div class="more-information">
+        <header>
+          <h3>More Information:</h3>
+        </header>
+        <p>58 years, 2 months, 3 days, 3 hours, 3 min, 3 seconds</p>
+      </div>
     </div>
   </main>
 </body>
