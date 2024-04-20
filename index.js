@@ -30,7 +30,6 @@ form.addEventListener("submit", (e)=>{
     monthsDifference += 12;
   }
 
-  console.log(`Years: ${yearsDifference}, Months: ${monthsDifference}, Days: ${daysDifference}`);  
   result(yearsDifference,monthsDifference,daysDifference); 
 }) 
 
