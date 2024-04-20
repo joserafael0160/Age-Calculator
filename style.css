@@ -61,8 +61,8 @@ button {
 
 }
 
-.result-container > div {
-  margin: 10px;
+.result-container > div > div { 
+  margin: 10px;  
 }
 
 @media screen and (width < 500px) {

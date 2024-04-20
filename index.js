@@ -51,17 +51,18 @@ function currentDate() {
 function result(year,month,day) {
   containerResult.innerHTML = ""
   const html=`
+<div>
   <header>
-  <h3>Answer:</h3>
-</header>
-<p>Age = ${year} years</p>
+    <h3>Answer:</h3>
+  </header>
+  <p>Age = ${year} years.</p>
 </div>
 <div class="more-information">
-<header>
-  <h3>More Information:</h3>
-</header>
-<p>${year} years, ${month} months, ${day} days</p>
-  
+  <header>
+    <h3>More Information:</h3>
+  </header>
+  <p>${year} years, ${month} months, ${day} days.</p>
+</div> 
   `
   const div = document.createElement("DIV");
   div.innerHTML=html.trim();  
