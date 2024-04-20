@@ -6,3 +6,13 @@ When the user inputs their date of birth and the date on which they want to calc
 In addition, the application provides a functionality to reset the input fields to the current date, allowing users to quickly calculate their age on the current date.
 
 This project combines web technologies (HTML, CSS, and JavaScript) to create a functional and user-friendly Age Calculator. This is a great resource for anyone who wants to calculate their exact age in years, months, and days, or who wants to know how much time has passed since a significant event in their life. 📅🎂
+
+And this is the result 
+
+- This is what it looks like on a PC with a resolution of 1920x1080:
+
+![](resources/image-in-PC.png) 
+
+- This is what it looks like on an iPhone SE with a resoution of 375x667:
+
+![](resources/image-in-iPhoneSE.png)
