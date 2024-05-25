@@ -1,15 +1,15 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+  color: #000;
 }
 
 body { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #246062;
-  background: linear-gradient(90deg, rgb(40, 108, 110) 0%, rgb(94, 25, 94) 100%);
+  background: linear-gradient(90deg, #4c6e70, #bdc3c7);
 }
 
 header {
@@ -27,11 +27,20 @@ header {
     text-align: center;
   }
 
-  & img {
+  & a {
     position: absolute;
     right: 4px;
     top: 4px;
     width: 40px;
+    
+    &:hover {
+      transform: scale(1.03)
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @media screen and (width < 500px) {
@@ -39,7 +48,8 @@ header {
       font-size: 1.7em;
       
     }
-    & img {
+ 
+    & a {
       width: 25px;
     }
   }
@@ -73,6 +83,8 @@ main {
       letter-spacing: 2px;
       border-radius: 5px;
       border: 1px solid #222;
+      min-width: 200px;
+      color: #33f;
 
       @media screen and (width < 500px) {
         font-size: 1em;
@@ -85,21 +97,21 @@ main {
       justify-content: space-between;
       margin-bottom: 20px;
 
-    & button {
-      
-      @media screen and (width < 500px) {
-        font-size: 1em;
-        width: 100px;
-      }
+      & button {
+        @media screen and (width < 500px) {
+          font-size: 1em;
+          width: 100px;
+        }
 
-      width: 20vw;
-      padding: 10px;
-      font-family: monospace;
-      border-radius: 50px;
-      border:  1px solid;
-      background-color: #bbb;
-      box-shadow: 1px 1px 2px;
-      font-size: 2vw;     
+        width: 20vw;
+        padding: 10px;
+        font-family: monospace;
+        border-radius: 50px;
+        border:  1px solid #000;
+        background-color: #bbb;
+        box-shadow: 1px 1px 2px #000;
+        font-size: 2vw;     
+        font-weight: bold;
       }
     }
   }
@@ -116,6 +128,7 @@ main {
       & header h2 {
         font-size: 2.5vw;
       }
+
       & p {
         font-size: 2vw;
       }
@@ -124,6 +137,7 @@ main {
         & header h2 {
           font-size: 1em;
         }
+
         & p {
           font-size: 1em;
         }
@@ -131,4 +145,3 @@ main {
     }
   }
 }
-
