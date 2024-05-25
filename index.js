@@ -2,19 +2,19 @@
 const form = document.getElementById("dates-form");
 const birthDate = document.getElementById("birth-date");
 const findDate = document.getElementById("find-date");
-const containerResult = document.querySelector(".result-container") 
+const resultContainer = document.querySelector(".result-container");
 currentDate();
 
 form.addEventListener("submit", (e)=>{
   e.preventDefault();
   const birth = birthDate.value.split("-");
-  const yearBirth = parseInt(birth[0]); 
-  const monthBirth = parseInt(birth[1]); 
+  const yearBirth = parseInt(birth[0]);
+  const monthBirth = parseInt(birth[1]);
   const dayBirth = parseInt(birth[2]);
 
   const find = findDate.value.split("-");
   const yearFind = parseInt(find[0]); 
-  const monthFind = parseInt(find[1]); 
+  const monthFind = parseInt(find[1]);
   const dayFind = parseInt(find[2]);
 
   let yearsDifference = yearFind - yearBirth;
@@ -30,41 +30,42 @@ form.addEventListener("submit", (e)=>{
     monthsDifference += 12;
   }
 
-  result(yearsDifference,monthsDifference,daysDifference); 
+  result(yearsDifference,monthsDifference,daysDifference);
 }) 
 
 form.addEventListener("reset", (e)=>{
-  e.preventDefault(); 
+  e.preventDefault();
   currentDate();
+  resultContainer.innerHTML = "";
 }) 
 
 function currentDate() {
   const currentDate = new Date();
-  const year = currentDate.getFullYear().toString(); 
-  const month = (currentDate.getMonth() + 1).toString().padStart(2,"0");  
+  const year = currentDate.getFullYear().toString();
+  const month = (currentDate.getMonth() + 1).toString().padStart(2,"0");
   const day = currentDate.getDate().toString().padStart(2,"0");
-  findDate.value=`${year}-${month}-${day}`; 
+  findDate.value=`${year}-${month}-${day}`;
 }
 
 
 function result(year,month,day) {
-  containerResult.innerHTML = ""
-  const html=`
-<div>
+  resultContainer.innerHTML = "";
+  const answer=`
   <header>
-    <h3>Answer:</h3>
+    <h2>Answer:</h2>
   </header>
   <p>Age = ${year} years.</p>
-</div>
-<div class="more-information">
+  `
+  const moreInformation = `
   <header>
-    <h3>More Information:</h3>
+    <h2>More Information:</h2>
   </header>
   <p>${year} years, ${month} months, ${day} days.</p>
-</div> 
-  `
-  const div = document.createElement("DIV");
-  div.innerHTML=html.trim();  
-  containerResult.appendChild(div);  
-
+  ` 
+  const answerDiv = document.createElement("DIV");
+  const moreInformationDiv = document.createElement("DIV");
+  answerDiv.innerHTML = answer.trim();  
+  moreInformationDiv.innerHTML = moreInformation.trim();  
+  resultContainer.appendChild(answerDiv);  
+  resultContainer.appendChild(moreInformationDiv);  
 }
