@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="resources/favicon.png">
-  <title>Age Calculator</title> 
-  <meta name="description" content="A free and easy-to-use Age calculator, ideal for any device, be it a computer or mobile browser, equipped with all the most commonly used features.">
+  <meta name="title" content="Age Calculator">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://joserafael0160.github.io/Age-calculator">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Age Calculator</title>
+  <meta name="description"
+    content="A free and easy-to-use Age calculator, ideal for any device, be it a computer or mobile browser, equipped with all the most commonly used features.">
   <meta name="keywords" content="Age, age, age-calculator, age calculator, Age calculator">
   <meta name="author" content="José Rafael">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph / Facebook tags-->
+  <meta name="og:title" content="Age Calculator">
+  <meta name="og:description"
+    content="A free and easy-to-use Age calculator, ideal for any device, be it a computer or mobile browser, equipped with all the most commonly used features.">
+  <meta property="og:url" content="https://joserafael0160.github.io/Age-calculator">
+  <meta property="og:site_name" content="Age Calculator">
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="Age Calculator">
+  <meta name="twitter:description"
+    content="A free and easy-to-use Age calculator, ideal for any device, be it a computer or mobile browser, equipped with all the most commonly used features.">
+  <meta name="twitter:site" content="https://joserafael0160.github.io/Age-calculator">
+  <meta name="twitter:creator" content="@jose_rafael016">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="module" src="./assets/js/index.js"></script>
 </head>
+
 <body>
   <header>
     <h1>Age Calculator</h1>
-    <img src="./assets/svgs/github.svg" alt="">
+    <img src="./assets/svgs/github.svg" alt="project-repository">
   </header>
   <main>
     <form id="dates-form">
-      <label for="birth-date">Date of Birth:</label> 
-      <input type="date" id="birth-date" step="1" min="300-00-00" value="2000-12-06" max="10000-12-12"> 
+      <label for="birth-date">Date of Birth:</label>
+      <input type="date" id="birth-date" step="1" min="300-00-00" value="2000-12-06" max="10000-12-12">
       <label for="find-date">Find Age on:</label>
-      <input type="date" id="find-date" step="1" min="300-00-00" max="10000-12-12"> 
+      <input type="date" id="find-date" step="1" min="300-00-00" max="10000-12-12">
       <div>
         <button id="clear" type="reset">Clear</button>
         <button id="calculate" type="submit">Calculate</button>
@@ -28,7 +67,8 @@
     </form>
     <div class="result-container">
     </div>
-  </main> 
+  </main>
   <script src="index.js"></script>
 </body>
+
 </html>
