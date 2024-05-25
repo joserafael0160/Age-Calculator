@@ -134,11 +134,11 @@ main {
       }
       
       @media screen and (width < 500px) {
-        & header h2 {
-          font-size: 1em;
+        header h2 {
+          font-size: 1.4em;
         }
 
-        & p {
+        p {
           font-size: 1em;
         }
       }
